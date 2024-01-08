@@ -1172,7 +1172,7 @@ private:
         submitInfo.pWaitSemaphores = waitSemaphores;
         submitInfo.pWaitDstStageMask = waitStages;
 
-        //于指定实际被提交执行的指令缓冲对象
+        //指定实际被提交执行的指令缓冲对象
         submitInfo.commandBufferCount = 1;
         submitInfo.pCommandBuffers = &commandBuffers[currentFrame];
 
