@@ -751,7 +751,7 @@ private:
     VkExtent2D chooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabilities)
     {
         //currentExtent 是surface的当前宽度和高度
-        if (capabilities.currentExtent.width != std::numeric_limits<uint32_t>::max())
+        if (capabilities.currentExtent.width != (std::numeric_limits<uint32_t>::max)())
         {
             return capabilities.currentExtent;
         }
