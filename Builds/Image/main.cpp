@@ -751,7 +751,7 @@ private:
     VkExtent2D chooseSwapExtent(const VkSurfaceCapabilitiesKHR& capabilities)
     {
         //currentExtent 是surface的当前宽度和高度
-        if (capabilities.currentExtent.width != std::numeric_limits<uint32_t>::max())
+        if (capabilities.currentExtent.width != (std::numeric_limits<uint32_t>::max)())
         {
             return capabilities.currentExtent;
         }
@@ -977,14 +977,14 @@ private:
         rasterizer.depthBiasClamp = VK_FALSE;
 
         /*多重采样*/
-        VkPipelineMultisampleStateCreateInfo multisamping{};
-        multisamping.sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO;
-        multisamping.sampleShadingEnable = VK_FALSE;
-        multisamping.rasterizationSamples = VK_SAMPLE_COUNT_1_BIT;
-        multisamping.minSampleShading = 1.0;
-        multisamping.pSampleMask = nullptr;
-        multisamping.alphaToCoverageEnable = VK_FALSE;
-        multisamping.alphaToOneEnable = VK_FALSE;
+        VkPipelineMultisampleStateCreateInfo multisampling{};
+        multisampling.sType = VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO;
+        multisampling.sampleShadingEnable = VK_FALSE;
+        multisampling.rasterizationSamples = VK_SAMPLE_COUNT_1_BIT;
+        multisampling.minSampleShading = 1.0;
+        multisampling.pSampleMask = nullptr;
+        multisampling.alphaToCoverageEnable = VK_FALSE;
+        multisampling.alphaToOneEnable = VK_FALSE;
 
         /*颜色混合*/
         //对每个绑定的帧缓冲进行单独的颜色混合配置
@@ -1041,7 +1041,7 @@ private:
         pipelineInfo.pInputAssemblyState = &inputAssembly;
         pipelineInfo.pViewportState = &viewportState;
         pipelineInfo.pRasterizationState = &rasterizer;
-        pipelineInfo.pMultisampleState = &multisamping;
+        pipelineInfo.pMultisampleState = &multisampling;
         pipelineInfo.pColorBlendState = &colorBlending;
         pipelineInfo.pDynamicState = &dynamicState;
         pipelineInfo.layout = pipelineLayout;
@@ -1101,7 +1101,6 @@ private:
     void createFramebuffers()
     {
         //分配足够的空间来存储所有帧缓冲对象
-        swapChainFramebuffers.resize(swapChainImageViews.size());
         swapChainFramebuffers.resize(swapChainImageViews.size());
 
         //为交换链的每一个图像视图对象创建对应的帧缓冲

@@ -24,6 +24,7 @@
     <ProjectGuid>{cf6298d9-f045-412c-ad38-8f3e9f6e32fd}</ProjectGuid>
     <RootNamespace>NoShader</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Triangle</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
