@@ -8,7 +8,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependency\vulkan\Include;$(SolutionDir)Dependency\GLFW\include;$(SolutionDir)Dependency\SOIL2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependency\vulkan\Include;$(SolutionDir)Dependency\GLFW\include;$(SolutionDir)Dependency\stb;$(SolutionDir)Dependency\tinyobjloader;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <PreprocessorDefinitions>GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>

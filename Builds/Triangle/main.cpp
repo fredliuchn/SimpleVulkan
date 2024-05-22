@@ -885,8 +885,8 @@ private:
         int pos = strPath.find_last_of('\\', strPath.length());
         std::string workpath = strPath.substr(0, pos);
 
-        auto vertShaderCode = readFile(workpath + "/../shaders/Triangle.vert");
-        auto fragShaderCode = readFile(workpath + "/../shaders/Triangle.frag");
+        auto vertShaderCode = readFile(workpath + "/../Resoures/shaders/Triangle.vert");
+        auto fragShaderCode = readFile(workpath + "/../Resoures/shaders/Triangle.frag");
 
         VkShaderModule vertShaderModule = createShaderModule(vertShaderCode);
         VkShaderModule fragShaderModule = createShaderModule(fragShaderCode);
