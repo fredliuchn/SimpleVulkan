@@ -939,8 +939,8 @@ private:
     //创建渲染管线
     void createGraphicsPipeline()
     {
-        auto vertShaderCode = readFile(workPath + "/../Resoures/shaders/MipMapping.vert");
-        auto fragShaderCode = readFile(workPath + "/../Resoures/shaders/MipMapping.frag");
+        auto vertShaderCode = readFile(workPath + "/../Resoures/shaders/MultiSampling.vert");
+        auto fragShaderCode = readFile(workPath + "/../Resoures/shaders/MultiSampling.frag");
 
         VkShaderModule vertShaderModule = createShaderModule(vertShaderCode);
         VkShaderModule fragShaderModule = createShaderModule(fragShaderCode);
