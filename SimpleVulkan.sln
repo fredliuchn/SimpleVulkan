@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MipMapping", "Builds\MipMap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiSampling", "Builds\MultiSampling\MultiSampling.vcxproj", "{99AC76C0-B6FC-47CD-9C77-6C2B0FEA7443}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Compute", "Builds\Compute\Compute.vcxproj", "{6FC25C41-1017-497B-B986-C8C7D24B388B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{99AC76C0-B6FC-47CD-9C77-6C2B0FEA7443}.Release|x64.Build.0 = Release|x64
 		{99AC76C0-B6FC-47CD-9C77-6C2B0FEA7443}.Release|x86.ActiveCfg = Release|Win32
 		{99AC76C0-B6FC-47CD-9C77-6C2B0FEA7443}.Release|x86.Build.0 = Release|Win32
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Debug|x64.ActiveCfg = Debug|x64
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Debug|x64.Build.0 = Debug|x64
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Debug|x86.ActiveCfg = Debug|Win32
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Debug|x86.Build.0 = Debug|Win32
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Release|x64.ActiveCfg = Release|x64
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Release|x64.Build.0 = Release|x64
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Release|x86.ActiveCfg = Release|Win32
+		{6FC25C41-1017-497B-B986-C8C7D24B388B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
